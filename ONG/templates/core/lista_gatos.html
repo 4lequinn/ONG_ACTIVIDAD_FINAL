@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos</title>
+</head>
+<body background={% static "img/fondo_lista_gato.jpg" %} text="Red" style="background-size: cover;">
+    <i><a href={% url 'INDEX' %}>Inicio</a></i>
+    <center>
+        <h1> 
+            <i>
+                GATOS EN ADOPCIÓN
+            </i>
+        </h1>
+        <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Ratione inventore maiores animi molestiae recusandae?   <br>
+             Aliquid sequi similique tempora ipsa, laudantium ex quisquam dolores reiciendis explicabo, <br>
+             iure minus expedita quas optio.</i>
+
+        <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;"> Nuestros gatos que buscan familia :</h2>
+
+        <table border="1">
+            <tr>
+                <td> <img src={% static "img/thommy.jpg" %} alt="" width="200" height="250"></td>
+                <td><a href={% url 'THOMMY' %}>Thommy</a></td>
+            </tr>
+            <tr>
+                <td> <img src={% static "img/ginger.jpg" %} alt="" width="200" height="250"></td>
+                <td> <a href={% url 'GINGER' %}>Ginger</a></td>
+            </tr>
+            <tr>
+                <td><img src={% static "img/lucifer.jpg" %} alt="" width="200"  height="250"></td>
+                <td><a href={% url 'LUCIFER' %}>Lucifer</a></td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
